@@ -16,4 +16,7 @@ document.getElementById('depsite-btn').addEventListener('click',function(){
     const newDepositeAmount = previousDepositeAmount + depositeAmount;
     depositeTotal.innerText = newDepositeAmount;
 
+    const balanceTotal = document.getElementById('balance-total');
+    console.log(balanceTotal)
+
 })
