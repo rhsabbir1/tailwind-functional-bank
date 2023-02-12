@@ -20,19 +20,46 @@
             <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
                 <div class="bg-yellow-400 p-8 text-white rounded-lg">
                     <h4 class="text-3xl my-2">Deposit</h4>
-                    <h2 class="text-4xl">$<span>00</span></h2>
+                    <h2 class="text-4xl">$<span id="deposite-total">00</span></h2>
                 </div>
-                <div class="bg-yellow-400 p-8 text-white rounded-lg">
+                <div class="bg-red-400 p-8 text-white rounded-lg">
                     <h4 class="text-3xl my-2">Withdrad</h4>
-                    <h2 class="text-4xl">$<span>00</span></h2>
+                    <h2 class="text-4xl">$<span id="withdrad-total">00</span></h2>
                 </div>
-                <div class="bg-yellow-400 p-8 text-white rounded-lg">
+                <div class="bg-green-400 p-8 text-white rounded-lg">
                     <h4 class="text-3xl my-2">Balance</h4>
-                    <h2 class="text-4xl">$<span>00</span></h2>
+                    <h2 class="text-4xl">$<span id="balance-total">00</span></h2>
                 </div>
             </div>
+
+
         </section>
+        <!-- deposite and Withdrad  -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white my-12">
+                <div class="bg-green-400 p-8 rounded-xl">
+                    <h4 class="text-2xl my-5">Diposite</h4>
+                    <input class="w-9/12 block mb-2 px-3 py-2 rounded-lg text-black	" type="text" name="" id="deposite-field"
+                        placeholder="Please deposite">
+
+                    <button id="depsite-btn"
+                        class="bg-blue-800 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Depsite</button>
+                </div>
+                <div class="bg-sky-500 p-8 rounded-xl">
+                    <h4 class="text-2xl my-5">Withdrow</h4>
+                    <input class="w-9/12 block mb-2 px-3 py-2 rounded-lg text-black	" type="text" name="" id="Withdrow-field"
+                        placeholder="Withdrow">
+
+                    <button id="withdrow-btn"
+                        class="bg-blue-800 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Withdrow</button>
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
+    <script src="js/deposite.js"></script>
 </body>
 
 </html>
