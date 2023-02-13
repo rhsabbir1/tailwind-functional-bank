@@ -12,13 +12,17 @@ document.getElementById('withdrow-btn').addEventListener('click',function(){
     const withdradStr = withdradTotalElement.innerText;
     const previousWithdrawAmount = parseFloat(withdradStr)
 
-    const newWithdrawAmount = previousWithdrawAmount + withdrawAmount;
-    withdradTotalElement.innerText = newWithdrawAmount;
-
 
     const balanceTotal = document.getElementById('balance-total');
     const balanceTotalString = balanceTotal.innerText;
     const previousBalanceAmount = parseFloat(balanceTotalString)
+
+    if(withdrawAmount > previousBalanceAmount){
+        return;
+    }
+
+    const newWithdrawAmount = previousWithdrawAmount + withdrawAmount;
+    withdradTotalElement.innerText = newWithdrawAmount;
 
     const newbalance = previousBalanceAmount - withdrawAmount;
     balanceTotal.innerText = newbalance;
